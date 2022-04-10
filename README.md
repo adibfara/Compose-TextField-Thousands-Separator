@@ -7,6 +7,6 @@ You can find the main file [here](https://github.com/adibfara/Compose-TextField-
 Note: The space for the added thousands separator is accounted for the next number.
 So in `1,234`, index `1` and `2` both map to the end of space between 1 and 2.
 
-To be exact, by clicking the comma (as for pointing the cursor), the cursor is always put before the 2 and after the comma (even if behind the comma was selected). This is the same behavior as Compose's own _credit card number_ implementation.
+To be exact, by clicking the comma (as for pointing the cursor), the cursor is always put before the 2 and after the comma (even if behind the comma was clicked). This is the same behavior as Compose's own _credit card number_ example.
 
 Note: You can have your own implementation of a thousand separator (based on locale or ...) and pass it as `thousandSeparator` argument.

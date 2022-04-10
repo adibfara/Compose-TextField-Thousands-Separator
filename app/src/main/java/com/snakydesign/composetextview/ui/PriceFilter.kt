@@ -23,7 +23,7 @@ fun priceFilter(
     thousandSeparator: (String) -> String = { text -> text.withThousands() },
 ): TransformedText {
     val out = thousandSeparator(text)
-    val creditCardOffsetTranslator = object : OffsetMapping {
+    val offsetMapping = object : OffsetMapping {
         override fun originalToTransformed(offset: Int): Int {
             val rightOffset = text.lastIndex - offset
             val commasToTheRight = rightOffset / 3
@@ -37,5 +37,5 @@ fun priceFilter(
             return (offset - (totalCommas - commasToTheRight))
         }
     }
-    return TransformedText(AnnotatedString(out), creditCardOffsetTranslator)
+    return TransformedText(AnnotatedString(out), offsetMapping)
 }
