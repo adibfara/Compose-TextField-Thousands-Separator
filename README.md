@@ -2,7 +2,8 @@
 
 You can find the code and the required tests for implementation of a thousands separator inside a `TextField` in compose.
 
-You can find the main file [here](https://github.com/adibfara/Compose-TextField-Thousands-Separator/blob/main/app/src/main/java/com/snakydesign/composetextview/ui/PriceFilter.kt).
+You can find the main file [here](https://github.com/adibfara/Compose-TextField-Thousands-Separator/blob/main/app/src/main/java/com/snakydesign/composetextview/ui/PriceFilter.kt)
+and the tests [here](https://github.com/adibfara/Compose-TextField-Thousands-Separator/blob/main/app/src/test/java/com/snakydesign/composetextview/ui/PriceFilterKtTest.kt).
 
 Note: The space for the added thousands separator is accounted for the next number.
 So in `1,234`, index `1` and `2` both map to the end of space between 1 and 2.
